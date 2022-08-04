@@ -33,7 +33,7 @@ def evaluation(a,b):
     var = 1-(np.var(a - b))/np.var(a)
     return rmse, mae, 1-F_norm, r2, var
  
-path = r'data/los_speed.csv'
+path = r'data_speed.csv'
 data = pd.read_csv(path)
 
 time_len = data.shape[0]
